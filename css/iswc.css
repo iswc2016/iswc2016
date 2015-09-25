@@ -1,6 +1,6 @@
 body{
 	background-color: #ddd;
-	padding:30px;
+	padding:30px 5px;
 }
 .allign-center{
 	text-align:center;
@@ -13,6 +13,7 @@ body{
   background: -o-linear-gradient(#ccc,#fff,#fff); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#ccc,#fff,#fff); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#ccc,#fff,#fff); /* Standard syntax */
+  background-repeat: repeat-x;
 }
 body > div.iswc-wrap{
 	margin:auto;
@@ -21,11 +22,11 @@ body > div.iswc-wrap{
 	max-width:1000px;
 	text-align: left;
 	/*border:1px solid #999;*/
-	box-shadow: 0px 0px 5px #888888;
+	box-shadow: 0px 0px 5px #888;
 }
 
 body > div.iswc-wrap > div.iswc-body{
-	padding:0 10px;
+	padding:0 10px 20px 10px;
 }
 
 .iswc-wrapper-left{
@@ -43,6 +44,14 @@ body > div.iswc-wrap > div.iswc-body{
 	padding-right:10px;
 }
 
+.iswc-news{
+	border-bottom:dotted 1px #dedede;
+	padding-bottom:5px;
+}
+
+.iswc-news > .iswc-news-date{
+	text-align:right;
+}
 
 /* slide */
 div.slide{
@@ -53,10 +62,32 @@ div.slide{
 /* bootstrap */
 .navbar{
 	border-radius:0px;
-	/*min-height: auto;
-	margin-bottom: 10px;*/
+	min-height: auto;
+	margin-bottom: 0;
 }
+
+.navbar-header .navbar-brand,
 .navbar-nav > li > a{
-	/*padding-top:5px;
-	padding-bottom:5px;*/
+	padding-top:5px;
+	padding-bottom:5px;
+	height:auto;
+}
+
+nav.iswc-navbar{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.iswc-navbar-back{
+	background-color: #000;
+	padding:5px 0;
+	margin-bottom: 20px;
+}
+
+footer{
+	/* background: -webkit-linear-gradient(#ddd,#eee,#fff,#fff,#fff); /* For Safari 5.1 to 6.0 */
+  	/* background: -o-linear-gradient(#ddd,#eee,#fff,#fff,#fff); /* For Opera 11.1 to 12.0 */
+  	/* background: -moz-linear-gradient(#ddd,#eee,#fff,#fff,#fff); /* For Firefox 3.6 to 15 */
+	/* background: linear-gradient(#ddd,#eee,#fff,#fff,#fff); /* Standard syntax */
+	background-color: #fafafa;
 }

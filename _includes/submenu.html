@@ -1,0 +1,53 @@
+{% assign subpages = (site.pages | where: "menu", "sub" | where: "group", page.group) %}
+{% if subpages.size >0 %}
+	{% assign mainpages = (site.pages | where: "menu", "main" | where: "group", page.group) %}
+	{% if mainpages.size >0 %}
+		{% assign page = mainpages[0] %}
+		<h3><a href="{{ site.baseurl }}/{{ page.path }}">{{ page.title }}</a></h3>
+	{% endif %}
+
+	<ul>
+		{% for page in subpages %}
+			<li><a href="{{ site.baseurl }}/{{ page.path }}">{{ page.title }}</a></li>
+		{% endfor %}
+	</ul>
+{% endif %}
+
+<!--
+{% if page.group == "calls" %}
+   <h3>Calls</h3>
+   <ul>
+	<li><a href="#">for Research Papers</a></li>
+	<li><a href="#">for Posters and Demos</a></li>
+	<li><a href="#">for Workshops</a></li>
+   </ul>
+   <hr/>
+{% endif %}
+
+{% if page.group == "attending" %}
+   <h3>Attending</h3>
+   <ul>
+	<li><a href="#">Registration</a></li>
+	<li><a href="{{ site.baseurl }}/pages/{{ page.group }}/venue.html">Venue</a></li>
+	<li><a href="#">Accommodations</a></li>
+	<li><a href="#">Travel Information</a></li>
+	<li><a href="#">Visa Information</a></li>
+	<li><a href="#">Local Area</a></li>
+   </ul>
+   <hr/>
+{% endif %}
+
+{% if page.group == "organization" %}
+   <h3>Organization</h3>
+   <ul>
+	<li><a href="#">Research Track PC</a></li>
+	<li><a href="#">Empirical Studies and Experiments PC</a></li>
+	<li><a href="#">In-Use and Software Track PC</a></li>
+	<li><a href="#">Data Sets and Ontologies PC</a></li>
+	<li><a href="#">Doctoral Consortium PC</a></li>
+	<li><a href="#">Industry Track PC</a></li>
+	<li><a href="#">Posters and Demos PC</a></li>
+   </ul>
+   <hr/>
+{% endif %}
+-->

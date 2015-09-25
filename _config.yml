@@ -12,4 +12,4 @@ github_username:  iswc2016
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+#highlighter: rouge

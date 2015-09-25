@@ -1,0 +1,26 @@
+  <h1 class="page-heading">Recently updated</h1>
+
+
+  <div class="container-fluid">
+  {% assign iswcpages = (site.pages | where: "layout", "default" | sort: "updated") %}
+  {% for page in iswcpages reversed  %}
+    <div class="iswc-news row">
+      <div class="iswc-news-label col-md-8"><strong><a href="{{ site.baseurl }}/{{ page.path }}">{{ page.title }}</a></strong></div>
+      <div class="iswc-news-date col-md-4"><span class="text-muted">{{ page.updated | date: "%b %-d, %Y" }}</span></div>
+    </div>
+  {% endfor %}
+  </div>
+
+  <hr/>
+  <h1 class="page-heading">News</h1>
+
+  <div class="container-fluid">
+    {% for post in site.posts %}
+    <div class="iswc-news row">
+      <div class="iswc-news-label col-md-8"><strong><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong></div>
+      <div class="iswc-news-date col-md-4"><span class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</span></div>
+    </div>
+  {% endfor %}
+  </div>
+  
+  <!-- <p style="padding-top:20px" class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->

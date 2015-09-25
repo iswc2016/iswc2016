@@ -1,4 +1,6 @@
 ---
+title: "ISWC2016 Home"
+updated:   2015-09-11 17:38:49
 layout: default
 ---
 <div class="slide">
@@ -6,20 +8,16 @@ layout: default
 </div>
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+<hr/>
+<div class="jumbotron">
+	<div class="container">
+	    <p style="font-size:14pt;text-align:justify">ISWC 2016 is the premier international forum, for the Semantic Web / Linked Data Community. Here, scientists, industry specialists, and practitioners meet to discuss the future of practical, scalable, user-friendly, and game changing solutions.</p>
+	 	<div class="text-info" style="text-align:center;font-size:18pt;padding-top:5px">Come and join us in Kobe to hear</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  	</div>
+</div>
+  
+<hr/>
+  {% include news.html %}
 
 </div>
