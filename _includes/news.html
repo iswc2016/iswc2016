@@ -2,13 +2,22 @@
 
 
   <div class="container-fluid">
-  {% assign iswcpages = (site.pages | where: "layout", "default" | sort: "updated") %}
+  {% assign iswcpages = (site.pages | where: "status", "published" | sort: "updated") %}
+  {% assign counter = 0 %}
   {% for page in iswcpages reversed  %}
-    <div class="iswc-news row">
+    {% assign counter=counter | plus:1 %}  
+    {% if counter > 5 %}
+      {% assign rclass="iswc-recent-over hide" %}
+    {% endif %}
+    <div class="iswc-recent iswc-news row {{rclass}}">
       <div class="iswc-news-label col-md-8"><strong><a href="{{ site.baseurl }}/{{ page.path }}">{{ page.title }}</a></strong></div>
       <div class="iswc-news-date col-md-4"><span class="text-muted">{{ page.updated | date: "%b %-d, %Y" }}</span></div>
     </div>
   {% endfor %}
+     <div style="padding-top:5px; text-align:right">
+        <button onclick="$('.iswc-recent-over').toggleClass('hide');" type="button" class="btn btn-default btn-xs iswc-recent-over">more...</button>
+        <button onclick="$('.iswc-recent-over').toggleClass('hide');" type="button" class="btn btn-default btn-xs iswc-recent-over hide">...less</button>
+     </div>
   </div>
 
   <hr/>

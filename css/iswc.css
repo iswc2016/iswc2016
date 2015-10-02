@@ -53,6 +53,17 @@ body > div.iswc-wrap > div.iswc-body{
 	text-align:right;
 }
 
+span.iswc-right-emph-date{
+	color:red;
+	margin-left:20px;
+	font-weight: bold;
+}
+
+ul.iswc-right-emph-date li{
+	margin-top: 10px;
+	
+}
+
 /* slide */
 div.slide{
 	/*margin: -10px -25px 20px -20px;*/

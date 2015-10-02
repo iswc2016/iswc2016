@@ -1,18 +1,64 @@
 {% include submenu.html %}
 <h3>Important News</h3>
-<ul>
-	<li>Paper submission: TBD</li>
-	<li>Poster submission: TBD</li>
+<ul class="iswc-right-emph-date">
+	<li>
+		Workshop and Tutorial Proposals<br/>
+		<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> <span class="iswc-right-emph-date">March 11, 2016</span>
+	</li>
+	<li>
+		Standard Track Abstracts<br/>
+		<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> <span class="iswc-right-emph-date">April 15, 2016</span>
+	</li>
+	<li>
+		Standard Track Papers<br/>
+		<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> <span class="iswc-right-emph-date">April 22, 2016</span>
+	</li>
 </ul>
 
-
 <hr/>
+
+{% if page.group == "attending" %}
+   {% include yen-exchange.html %}
+   <hr/>
+{% endif %}
+
+{% if (page.group == "calls" or page.group == "deadline") %}
+   {% include clocks.html %}
+   <hr/>
+{% endif %}
+
+
 <h3>Sponsors</h3>
 <a href="{{ site.baseurl }}/pages/sponsorship.html" class="btn btn-default btn-block" style="color:#000; margin-bottom:10px; padding:3px" role="button">Become a Sponsor</a>
+
+<hr/>
+<h3>Organizers</h3>
 <div class="panel panel-default">
   <div class="panel-body">
 	<a target="_blank" href="http://linkedopendata.jp/"><img src="{{ site.baseurl }}/images/sponsors/lodi-logo.png" width="100%"/></a>
   </div>
 </div>
 
+<hr/>
 
+<a class="twitter-timeline" href="https://twitter.com/ISWC2016" data-widget-id="649874606023577600">Tweets by @ISWC2016</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script>
+ function getCurrentDateTime (current){
+ 	//var currentTime = new Date ( );
+  	var currentHours = current.getHours ( );
+  	var currentMinutes = current.getMinutes ( );
+  	var currentSeconds = current.getSeconds ( );
+
+  	// Pad the minutes and seconds with leading zeros, if required
+  	currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+  	currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+  	currentHours = ( currentHours < 10 ? "0" : "" ) + currentHours;
+
+  	// Compose the string for display
+  	var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds;
+  	
+   	return currentTimeString;
+ }
+ </script>

@@ -1,0 +1,46 @@
+<script src="http://widget.time.is/en.js"></script>
+
+<div class="row" style="text-align:center; font-weight: normal;" onmouseover="$('#time_is_link_div').removeClass('hide');" onmouseout="$('#time_is_link_div').addClass('hide');">
+	<div class="col-md-6" >
+	  	<div class="panel panel-default" style="margin-bottom:7px;">
+	  		<div class="panel-heading"><strong>Hawaii's time</div>
+	  		<div class="panel-body">
+				<span id="Hawaii_z90e"></span>
+	  		</div>
+		</div>
+  	</div>
+
+  	<div class="col-md-6" >
+  		<div class="panel panel-default" style="margin-bottom:7px;">
+	  		<div class="panel-heading"><strong>Japan's time</strong></div>
+	  		<div class="panel-body">
+				<span id="Japan_z444"></span>
+	    	</div>
+	  	</div>
+  	</div>
+
+	<div id="time_is_link_div" class="hide" style="text-align:right; padding:0 20px; font-weight: normal;">
+		Powered by <a href="http://time.is/" target="_blank" id="time_is_link" rel="nofollow">time.is</a>
+	</div>
+
+</div>
+
+<script>
+var ti_template 	= "<div style='font-size:14pt'>TIME</div><div style='font-size:10pt'>DATE</div>";
+var ti_time_format 	= "12hours:minutes:seconds <span style='font-size:10pt'>AMPM</span>";
+var ti_date_format	="year-monthnum-daynum <span style='font-size:8pt'>(dname)</span>";
+
+time_is_widget.init({
+	Hawaii_z90e : {
+			template: 		ti_template, 
+			time_format: 	ti_time_format,
+			date_format:	ti_date_format
+		},
+	Japan_z444 : {
+			template: 		ti_template, 
+			time_format: 	ti_time_format,
+			date_format:	ti_date_format
+		}
+	});
+
+</script>
