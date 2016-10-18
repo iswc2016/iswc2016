@@ -194,6 +194,7 @@
       $('.iswc-vote-code').hide();
       $('.iswc-vote-submit').hide();
       $('.iswc-vote-title').hide();
+      $('.iswc-vote-submit').removeAttr('disabled');
       $('.iswc-vote-cancel').text('Close');
     })
     .fail(function( jqXHR, textStatus, errorThrown) {
