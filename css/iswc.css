@@ -460,6 +460,10 @@ footer{
   content: "[D]";
 }
 
+#votingModal .modal-title .iswc-vode-id {
+  display: none;
+}
+
 button.iswc-show-favorites {
   float:right;
 }
