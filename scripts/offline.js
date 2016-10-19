@@ -189,6 +189,7 @@
       data: { key: $('.iswc-vote-code input').val() }
     })
     .done(function( msg ) {
+      $('.iswc-vote-error').hide();
       $('.iswc-vote-success').show();
       $('.iswc-vote-progress').hide();
       $('.iswc-vote-code').hide();
@@ -219,6 +220,8 @@
   	$('#votingModal .modal-title .iswc-vode-id').text(id);
   	$('#votingModal').find('.iswc-vote-title').html('You are about to vote for <i>' + title + '</i>');
     $('#votingModal').find('.iswc-vote-code input').val('');
+    $('#votingModal').find('.iswc-vote-title').show();
+    $('#votingModal').find('.iswc-vote-submit').removeAttr('disabled');
 
   	$('#votingModal').modal('show');
   })
