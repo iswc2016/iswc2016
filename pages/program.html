@@ -1069,9 +1069,36 @@ $(document).ready(function(){
                         </td>
                         <td class=""></td>
                     </tr>
-                    {% assign iswc_session_name = "Special event session" %}
-                    {% assign iswc_session_room = "Room 501" %}
-                    {% include tr-presentations.html %}
+                    <tr class="iswc-session-head">
+                      <td class="no-flip">
+                        <h4>Special event session</h4>
+                      </td>
+                      <td class="iswc-parallel-room no-flip"><a href="/pages/program/floorplan.html#Room%20501">Room 501</a></td>
+                     </tr>
+                    <tr class="iswc-session-items">
+                      <td colspan=2 class="no-flip">
+                        <ul class="iswc-session-list">
+                          <li class="iswc-session">
+                            <div class="iswc-paper">
+                              <div class="iswc-paper-title">Semantic Web Science Association Dissertation Award Winner: Hassan Said, Open University, UK, "Semantic Sentiment Analysis of Microblogs"</div>
+                              <div class="iswc-paper-authors"></div>
+                            </div>
+                            <div class="iswc-actions">
+                              <div class="iswc-paper-time">15:30</div>
+                            </div>
+                          </li>
+                          <li class="iswc-session">
+                            <div class="iswc-paper">
+                              <div class="iswc-paper-title">Selected workshop reports</div>
+                              <div class="iswc-paper-authors"></div>
+                            </div>
+                            <div class="iswc-actions">
+                              <div class="iswc-paper-time">15:50</div>
+                            </div>
+                          </li>
+                        </ul>
+                       </td>
+                    </tr>
                     {% assign iswc_session_name = "Enriching Data Sources" %}
                     {% assign iswc_session_room = "Room 502" %}
                     {% include tr-presentations.html %}
