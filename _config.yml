@@ -14,7 +14,7 @@ markdown: kramdown
 #Github URL
 github_ghpages: "https://github.com/iswc2016/iswc2016/blob/gh-pages"
 
-voting: true
+voting: false
 voting_url: "https://iswc.lodac.nii.ac.jp/iswc-vote/vote.php"
 paper_links: true
 paper_url: "https://iswc.lodac.nii.ac.jp/files"
