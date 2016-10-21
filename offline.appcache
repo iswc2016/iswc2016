@@ -3,7 +3,7 @@
 CACHE MANIFEST
 
 #  rev {{ site.time }}
-#  increment this: 18
+#  increment this: 19
 
 CACHE:
 {{ site.baseurl }}/libs/bootstrap/css/bootstrap.min.css
