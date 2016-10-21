@@ -1,0 +1,49 @@
+---
+title: "Lightning Talks"
+updated:   2016-10-21 00:00:00
+layout: default
+group: program
+menu: sub
+ordered: 10
+status: published
+---
+
+<h1 id="iswc-page-title">{{ page.title }}</h1>
+
+
+<!-- ################################################################################  -->
+
+
+{% assign iswc_talks = (site.data.talks | sort: "id")) %}
+{% for talk in iswc_talks %}
+
+<div class="row">
+	 <div class="col-xs-6 col-md-3">
+	    <a href="{{ site.baseurl }}/files/talks/{{ talk.id }}.pdf" target="_blank" class="thumbnail" style="margin-top: 10px">
+	      <img src="{{ site.baseurl }}/images/talks/{{ talk.id }}.jpg" alt="{{ talk.id }}">
+	    </a>
+	  </div>
+ 
+	 <div class="col-xs-6 col-md-9">
+	 	<h4>
+	 		<a href="{{ site.baseurl }}/files/talks/{{ talk.id }}.pdf" target="_blank" >
+	 			{{ talk.title }}
+	 		</a>
+	 	</h4>
+	 	<div>Authors: {{ talk.authors }}</div>
+	 	<div>Email: {{ talk.email }} </div>
+	 	<div>Affiliation: {{ talk.affiliation }}</div>
+	 	{% if talk.link != null %}
+	 		<div>Link: <a href="{{ talk.link }}" target="_blank"> {{ talk.link }}</a></div>
+	 	{% endif %}
+	 </div>
+
+</div>
+
+<hr/>
+{% endfor %}
+
+
+<!-- ################################################################################  -->
+
+
