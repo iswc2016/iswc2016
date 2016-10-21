@@ -1,0 +1,22 @@
+id,authors,affiliation,email,title,link
+talk-01,"Filip Ilievski, Marieke van Erp, Stefan Schlobach, Piek Vossen and Frank van Harmelen",Vrije Universiteit Amsterdam,marieke.van.erp@vu.nl,Common Sense knowledge for entity dissambiguation,
+talk-02,Graeme Wood,Semantic Software,gwood@semanticsoftware.com.au,Semantic Computing,
+talk-03,Yury Emelyanov,ITMO University,yury.emelyanov@vismart.biz,Ontodia.org - easy-to-use visual data exploration library,
+talk-04,Haikal Pribadi,MindmapsDB,haikal@mindmaps.io,MindmapsDB - Open-Source Distributed Semantic Database,
+talk-05,"K_rlis _er_ns, J_lija Ov_i__ikova","Institute of Mathematics and Computer Science, University of Latvia",karlis.cerans@lumii.lv,ViziQuer: Graphical Notation and Tool for Data Analysis SPARQL Queries,
+talk-06,Search Development Division,Yahoo Japan Corporation,anaik@yahoo-corp.jp,Question Answer System Research,
+talk-07,"Pascal Hitzler, Krzysztof Janowicz","Wright State University & University of California, Santa Barbara",pascal.hitzler@wright.edu,Transparent Reviewing Works!,
+talk-08,Kenny Knecht,Ontoforce NV,kenny@ontoforce.com,DISQOVER semantic web tool,
+talk-09,Freddy Lecue,"Accenture Labs, INRIA",freddy.lecue@accenture.com,Open Position at Accenture,
+talk-10,Miel Vander Sande,University of Gent,miel.vandersande@ugent.be,Query Linked Data on the Web,
+talk-11,"K_rlis _er_ns, J_lija Ov_i__ikova, Uldis Boj_rs","Institute of Mathematics and Computer Science, University of Latvia",uldis.bojars@gmail.com,OWLGrEd: OWL Ontology Visualizer and Editor,
+talk-12,Pieter Colpaert,University of Gent,pieter.colpaert@ugent.be,the occupancy levels of trains,
+talk-13,"Sarven Capadisli, Amy Guy",University of Bonn,"info@csarven.ca, amy@rhiaro.co.uk",Linked Data Notifications,
+talk-14,Sarven Capadisli,University of Bonn,info@csarven.ca,dokieli,
+talk-15,Stefan Decker,RWTH Aachen University/Fraunhofer FIT,decker@informatik.rwth-aachen.de,Research Data Alliance,
+talk-16,Carole Goble,"School of Computer Science, University of Manchester, ELIXIR-UK",carole.goble@manchester.ac.uk,BioSchemas.org,http://bioschemas.org
+talk-17,Ruben Taelman and Ben De Meester,Ghent University - imec - IDlab,"ben.demeester@ugent.be, ruben.taelman@ugent.be",A Scientific Study on the Inefficiency of Ineffective Communication when Transferring Innovative Research Ideas through the Medium of Verbal and Visual Presentation Methods including an extensive Empirical Evaluation.,
+talk-18,"Ruben Verborgh, Miel Vander Sande",University of Gent,"miel.vandersande@ugent.be, ruben.verborgh@ugent.be",Linked Data Fragments,
+talk-19,"Rathachai Chawuthai, Hideaki Takeda",National Institute of Informatics,rathachai.c@gmail.com,RDF4U,http://rc.lodac.nii.ac.jp/rdf4u/
+talk-20,Harald Sack,FIZ Karlsruhe,harald.sack@hpi.de,Linked Data Engineering,
+talk-21,"Ilaria Tiddi, Enrico Daga, Enmanuelle Bastianelli, Mathieu d'Aquin","Knowledge Media Insititute, Open University",ilaria.tiddi@gmail.com,"Semantic Web and Robotics, can we work together?",
