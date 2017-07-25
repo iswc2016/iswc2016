@@ -19,3 +19,6 @@ voting_url: "https://iswc.lodac.nii.ac.jp/iswc-vote/vote.php"
 paper_links: false
 paper_url: "https://iswc.lodac.nii.ac.jp/files"
 offline: false
+
+gems:
+  - jekyll-redirect-from
